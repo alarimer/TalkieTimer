@@ -1,3 +1,5 @@
 <resources>
-    <string name="app_name">Talkie Timer</string>
+  <string name="app_name">Talkie Timer</string>
+  <string name="person_1_label">Person 1</string>
+  <string name="person_2_label">Person 2</string>
 </resources>

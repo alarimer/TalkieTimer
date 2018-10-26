@@ -2,6 +2,30 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+	android:gravity="center"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
+		<Switch
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:id="@+id/Person1Switch"
+			android:text="@+string/person_1_label" />
+		<Chronometer
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_toRightOf="@+id/Person1Switch"
+			android:layout_alignBaseline="@+id/Person1Switch"
+			android:id="@+id/Person1Chronometer" />
+		<Switch
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_below="@+id/Person1Switch"
+			android:id="@+id/Person2Switch"
+			android:text="@+string/person_2_label" />
+		<Chronometer
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_toRightOf="@+id/Person2Switch"
+			android:layout_alignBaseline="@+id/Person2Switch"
+			android:id="@+id/Person2Chronometer" />
 </RelativeLayout>
