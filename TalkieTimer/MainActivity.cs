@@ -52,6 +52,17 @@ namespace TalkieTimer
                     elapsed2 = SystemClock.ElapsedRealtime() - c2.Base;
                 }
             };
+
+            Button reset = FindViewById<Button>(Resource.Id.ResetButton);
+
+            reset.Click += (sender, e) =>
+            {
+                s1.Checked = s2.Checked = false;
+                c1.Base = c2.Base = SystemClock.ElapsedRealtime();
+                c1.Stop();
+                c2.Stop();
+                elapsed1 = elapsed2 = 0;
+            };
         }
     }
 }
